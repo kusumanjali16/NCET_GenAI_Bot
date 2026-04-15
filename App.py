@@ -11,7 +11,7 @@ audience.st.text_input("Audience")
 #BUTTOM TO Generate Content 
 if st.button("Generate Content"):
   prompt=f"write marketing content for {product} targeting {audience}."
-  response = client.chat.completion.create(
+  response = client.chat.completions.create(
       model="llama-3.3-70b-versatile",
       messages=[{"role":"user","content":prompt}]
   )
