@@ -7,7 +7,7 @@ st.image("ncet logo.png")
 
 client=Groq(api_key=st.secrets["GROQ_API_KEY"])
 product=st.text_input("product")
-audience.st.text_input("Audience")
+audience=st.text_input("Audience")
 #BUTTOM TO Generate Content 
 if st.button("Generate Content"):
   prompt=f"write marketing content for {product} targeting {audience}."
